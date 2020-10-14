@@ -149,7 +149,7 @@ class Encrypter implements Contracts\Encrypter
      * @return \ParagonIE\CipherSweet\EncryptedField
      * @throws \Exception
      */
-    protected function createFieldWithIndexes(Model $model, $column)
+    public function createFieldWithIndexes(Model $model, $column)
     {
         $method = $this->guessAttributeEncryptionMethod($column);
 
